@@ -209,9 +209,7 @@ const CreateTeam = () => {
         
 
        
-       
-
-
+    
         if(TempArr.length > max){
             toast.error(`You choose maximum ${max} wicket keeper`)
         } else if((TotalSelectPlayer + TempArr.length -1) >=11){
