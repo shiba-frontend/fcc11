@@ -1,0 +1,426 @@
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .inner-header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-banner h3 {
+        font-size: 36px;
+    }
+    .home-banner h5 {
+        font-size: 16px;
+    }
+    .home-banner h6 {
+        font-size: 16px;
+    }
+    img.man-icon {
+        left: 0;
+        right: 0;
+        width: 155px;
+        margin: 0 auto;
+    }
+    .about-sec img {
+        width:40%;
+    }
+    .about-sec h3 {
+        margin: 23px 0 0 0;
+    }
+    .intro-sec img {
+        width: 100%;
+    }
+    .info-sec ul {
+        flex-direction: column;
+    }
+    .info-sec h2 {
+        font-size: 23px;
+        margin: 21px 0 0 0;
+    }
+    .info-sec h1 {
+        font-size:36px;
+    }
+    .testim-r ul {
+        display: none;
+    }
+    .footer-widget ul {
+        column-count: 2;
+        gap: 0;
+    }
+    .banner-vector {
+        text-align: center;
+    }
+    img.banner-circle {
+        width: 74%;
+        margin: 0 auto;
+    }
+    .auth-lft img {
+        width: 99px;
+    }
+    .common-auth {
+        padding: 22px 0;
+    }
+    .auth-form h2 {
+        font-size: 20px;
+    }
+    .use-process {
+        padding: 33px 0;
+    }
+    .step-list img {
+        height: 97px;
+    }
+    .intro-sec h2 {
+        font-size: 26px;
+    }
+    .intro-sec img {
+        width: 48%;
+        display: block;
+        margin: 0 auto;
+    }
+    .intro-sec h3 {
+        font-size: 26px;
+    }
+    .info-sec ul {
+        align-items: flex-start;
+        gap: 19px;
+    }
+    .testimonail-sec {
+        padding: 32px 0;
+    }
+    .partners-sec h2 {
+        font-size: 24px;
+        margin: 0 0 33px 0;
+    }
+    .dashboard_menu ul {
+        flex-wrap: wrap;
+    }
+    .dashboard_menu ul a {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+    .top-dashboard-header h2 {
+        font-size: 17px;
+    }
+    .d-right {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .d-box h2 {
+        font-size: 18px;
+        margin: 0 0 12px 0;
+    }
+    .dinfo-box-l {
+        display: none;
+    }
+    .dinfo-box {
+        padding: 7px;
+        gap: 0;
+    }
+    .dinfo-box h5 {
+        font-size: 12px;
+    }
+    .dinfo-box b {
+        font-size: 15px;
+    }
+    .d-box h3 {
+        font-size: 16px;
+    }
+    .dashboard-form .form-control {
+        margin-bottom: 10px;
+    }
+    .card-listed label {
+        font-size: 12px;
+    }
+    .card-listed-lft h5 {
+        font-size: 15px;
+    }
+    .card-listed-lft h3 {
+        font-size: 18px;
+    }
+    .card-listed-lft {
+        padding: 10px 10px;
+    }
+    .card-listed-cen span {
+        font-size: 14px;
+        padding: 7px 7px;
+    }
+    .card-listed-rht {
+        padding: 10px 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-listed-rht h5 {
+        font-size: 15px;
+    }
+    .btnStyle-two {
+        font-size: 13px;
+        padding: 9px 20px;
+    }
+    .btnStyle-three {
+        font-size: 13px;
+    }
+    .btnStyle-one {
+        font-size: 12px;
+        padding: 9px 4px;
+    }
+    ul.dashboard-tab-menu.nav.nav-tabs {
+        width: 100%;
+    }
+    ul.dashboard-tab-menu.nav.nav-tabs li.nav-item button {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+    .split-div {
+        flex: 1;
+    }
+    .card-listed-cen {
+        text-align: center;
+        padding: 10px 10px;
+    }
+    .outline-btn {
+        font-size: 15px;
+    }
+    .withdraw-history-form {
+        gap: 9px;
+    }
+    table.history-table th {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 7px 10px;
+    }
+    .withdraw-sec h2 {
+        font-size: 17px;
+    }
+    .withdraw-amount-box {
+        align-items: flex-start;
+        gap: 13px;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+    .withdraw-amount-box h4 {
+        font-size: 17px;
+        width: 100%;
+    }
+    .solid-btn {
+        font-size: 14px;
+        padding: 13px 11px;
+    }
+    .payment-page h2 {
+        font-size: 15px;
+    }
+    .cupon-code-container {
+        flex-direction: column;
+    }
+    .dashboard-panel.p-5 {
+        padding: 15px !important;
+    }
+    .upload-profile button input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+    }
+    .upload-profile {
+        width: 70%;
+        height: 192px;
+        position: relative;
+        margin: 8px auto;
+    }
+    .inner-header-rht {
+        justify-content: center;
+    }
+    .top-dashboard-header.headerTwo h2 {
+        font-size: 12px;
+    }
+    .game-info h5 {
+        font-size: 15px;
+    }
+    ul.fantsy-match-list {
+        flex-direction: column;
+    }
+    ul.fantsy-match-list li {
+        width: 100%;
+    }
+    .match-list-box {
+        min-height: auto;
+    }
+    .dashboard-panel-item ul li a.nav-link {
+        flex-direction: column;
+    }
+    .dashboard-panel-item ul li {
+        width: 48%;
+  
+        flex-direction: column;
+        text-align: center;
+    }
+    .dashboard-panel-item .dashboard-earning-view li {
+        width: 48%;
+    }
+    .table-top {
+        flex-direction: column;
+    }
+    .table-top .form-group.w-50 {
+        width: 100% !important;
+    }
+    .ern-table-scroll {
+        overflow-x: scroll;
+    }
+    ul.admin-ern-table li {
+        flex: auto;
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    .dashboard-header-logo {
+
+        margin-bottom: 15px;
+    }
+    .nav-tabs .nav-link {
+        padding: 10px 9px;
+        font-size: 14px;
+    }
+    ul.match-winner-list {
+        flex-direction: column;
+    }
+    ul.match-winner-list li {
+        width: 100%;
+    }
+    ul.match-winner-list li {
+        width: 47%;
+    }
+    .my-team-box-bottom ul {
+        position: relative;
+        border-radius: 0;
+        margin-top: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    img.banner-circle {
+        width: 54%;
+    }
+    img.man-icon {
+        left: -398px;
+        width: 150px;
+    }
+    .home-banner h3 {
+        font-size: 68px;
+    }
+    .home-banner h6 {
+        font-size: 30px;
+    }
+    .home-banner h5 {
+        font-size: 30px;
+    }
+    .step-list img {
+        height: 86px;
+    }
+    .step-list h3 {
+        font-size: 14px;
+    }
+    .step-list p {
+        font-size: 12px;
+    }
+    .about-sec img {
+        width: 100%;
+    }
+    .intro-inner {
+        width: 100%;
+    }
+    .intro-sec img {
+        width: 100%;
+    }
+    .info-sec h2 {
+        font-size: 22px;
+    }
+    .info-sec h1 {
+        font-size: 61px;
+    }
+    .info-sec ul li h6 {
+        font-size: 13px;
+    }
+    .info-sec ul li b {
+        color: #ffd740;
+        font-size: 10px;
+    }
+    .dashboard_menu ul a {
+        padding: 8px 8px;
+        font-size: 10px;
+    }
+    .d-box h2 {
+        font-size: 19px;
+        margin: 0 0 13px 0;
+    }
+    .d-box h3 {
+        font-size: 14px;
+    }
+    .d-right {
+        gap: 7px;
+    }
+    .d-box h3 img {
+        width: 20px;
+    }
+    .dinfo-box-l {
+       display: none;
+    }
+    .dinfo-box {
+        padding: 10px;
+    }
+    .card-listed label {
+        font-size: 14px;
+    }
+    .card-listed-lft h5 {
+        font-size: 17px;
+    }
+    .card-listed-lft h3 {
+        font-size: 23px;
+    }
+    .card-listed-cen span {
+        font-size: 16px;
+        padding: 7px 16px;
+    }
+    .card-listed-rht h5 {
+        font-size: 17px;
+    }
+    .btnStyle-two {
+        font-size: 14px;
+        padding: 9px 23px;
+    }
+    .upload-profile button input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    img.man-icon {
+
+        width: 178px;
+
+    }
+    .home-banner h3 {
+        font-size: 86px;
+    }
+    .home-banner h5 {
+        font-size: 28px;
+    }
+    .home-banner h6 {
+        font-size: 28px;
+    }
+    .dashboard_menu ul a {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    .d-box h3 {
+        font-size: 16px;
+    }
+    .btnStyle-two {
+
+        font-size: 15px;
+        padding: 12px 21px;
+    }
+    .card-listed-cen {
+        text-align: center;
+        padding: 5px 0;
+    }
+}

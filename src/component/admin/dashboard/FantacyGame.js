@@ -1,0 +1,52 @@
+import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { IMAGE } from '../../../utils/Theme'
+import ApiConnection from "../../../utils/ApiConnection";
+import Loader from "../../../utils/Loader";
+
+const FantacyGame = ({value}) => {
+
+  
+
+
+  return (
+    <>
+    {value&&value.map((item, i)=>{
+        return (
+            <div className="card-listed" key={i}>
+                 
+            <label>{item?.game_name}</label>
+            <div className="row align-items-center">
+                <div className="col-lg-3">
+                    <div className="card-listed-lft">
+                        <h5>Prize Money</h5>
+                        <h3>${item?.total_prize_pool}</h3>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="card-listed-cen">
+                            <span>Winners: {item?.total_winners}</span>
+                         
+                            <h3>{item?.match?.match_status == 2 ? 'Completed' : item?.match?.match_status == 1 ? 'Live' : 'Upcoming'}</h3>
+                    </div>
+                </div>
+                <div className="col-lg-3">
+                    <div className="card-listed-rht">
+                        <h5>{item?.credit_required} Credits</h5>
+                
+                    
+                       
+                    </div>
+                </div>
+            </div>
+            
+              </div>
+        )
+    })}
+   
+   
+          </>
+  )
+}
+
+export default FantacyGame
