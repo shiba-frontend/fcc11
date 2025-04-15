@@ -568,6 +568,9 @@ item?.is_game_join != 0 ?
                  <h6>{moment(item?.game_date).format('MM-DD-YYYY')}, {moment(item?.game_date).format('LT')}</h6>
                      <h5>{item?.credit_required} Credits</h5>
                      </div>
+                     {item?.is_match_running == 0 &&
+                     <button className="btnStyle-two" onClick={()=>fetchReducer?.user?.available_credit_points < item?.credit_required ?  toast.error(`No sufficient credit point`) :   joinHandle(item?.id, item?.created_by, item?.total_winners, item?.credit_required, item?.game_predict_option, item?.tournament_id)}>Join Now</button>
+                     }
                      {/* <button className="btnStyle-two" onClick={()=>fetchReducer?.user?.available_credit_points < item?.credit_required ?  toast.error(`No sufficient credit point`) :   joinHandle(item?.id, item?.created_by, item?.total_winners, item?.credit_required, item?.game_predict_option, item?.tournament_id)}>Join Now</button> */}
                      {item?.game_predict_option == "full_fledged" &&
                      <div className="split-div">

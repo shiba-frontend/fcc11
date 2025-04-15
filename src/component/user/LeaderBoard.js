@@ -13,6 +13,8 @@ const LeaderBoard = () => {
     const [leaderboard, setfantasyleaderboard] = useState([])
     const [predictionleaderboard, setpredictionleaderboard] = useState([])
     const [type, settype] = useState(true)
+    const [teamjoined, setteamjoined] = useState("")
+    
 
     let navigate = useNavigate();
     let {id} = useParams()
@@ -42,9 +44,12 @@ const LeaderBoard = () => {
                 if(response?.data?.data?.game_type == 'select_winner'){
                     settype(false)
                     setpredictionleaderboard(response?.data?.data?.list)
+                    setteamjoined(response?.data?.data?.total_teams_joined)
+                    
                 } else {
                     settype(true)
                     setfantasyleaderboard(response?.data?.data?.list)
+                    setteamjoined(response?.data?.data?.total_teams_joined)
                 }
               
     
@@ -130,7 +135,7 @@ const LeaderBoard = () => {
                                     <h5>$ {data?.data?.credit_required}</h5>
                                 
                                     {/* <button className="btnStyle-two">Join Now</button> */}
-                                    <h3>Team Joined: {data?.teams?.length}</h3>
+                                    <h3>Team Joined: {teamjoined}</h3>
                                 </div>
                             </div>
                         </div>
