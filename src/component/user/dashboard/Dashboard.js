@@ -89,10 +89,10 @@ let navigate = useNavigate()
 
                
                   if(element?.is_match_live == 2  ){
-                    if(element?.is_game_join != 0)
+                    // if(element?.is_game_join != 0)
                     return CompletedTempArr.push(element)
                   } else if(element?.is_match_live == 1){
-                      if(element?.is_game_join != 0)
+                      // if(element?.is_game_join != 0)
                     return LiveTempArr.push(element)
                   } else if(element?.is_match_live == 0){
                      

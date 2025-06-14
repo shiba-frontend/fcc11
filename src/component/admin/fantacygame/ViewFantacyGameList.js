@@ -316,7 +316,7 @@ const handleChange = (e, data) =>{
                    </div>
 }
            </div>
-           {fantasygametype == "full_fledged" &&
+           {
            rowlist.map((item, index)=>{
                return (
                    <div className="row">

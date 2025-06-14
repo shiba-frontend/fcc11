@@ -8,8 +8,12 @@ let API_Token = localStorage.getItem("fcc_access_token");
 // export const BaseUrl = {
 //     baseurl: 'https://fcc11.com/fcc11-api/'
 // }
+// export const BaseUrl = {
+//     baseurl: 'https://fancric11.com/fcc11-api/'
+// }
+
 export const BaseUrl = {
-    baseurl: 'https://fancric11.com/fcc11-api/'
+    baseurl: 'https://fcc11.com/fcc11-api/'
 }
 
 export const key = {
@@ -17,8 +21,8 @@ export const key = {
 } 
 //STRIPE_SECRET=sk_test_51PgReODOeRzbqDrrn9s1SqlLvomCCUclEB444UbiHZHdduWukZotqwB5NaYL9nzHimgUSseLeCtq0uArONA98fJ800AFiQZyek
 
-//const URL = "https://fcc11.com/fcc11-api/api/"
-const URL = "https://fancric11.com/fcc11-api/api/"
+const URL = "https://fcc11.com/fcc11-api/api/"
+//const URL = "https://fancric11.com/fcc11-api/api/"
 
 export default axios.create({
     baseURL:URL,

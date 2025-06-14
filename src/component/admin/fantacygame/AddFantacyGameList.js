@@ -813,7 +813,7 @@ const SingleMatchHandle = (e) =>{
                             </div>
                         </div>
                 </div>
-                {fantasygametype == "full_fledged" && 
+                {
                 rowlist.map((item, index)=>{
                     return (
                         <div className="row">
