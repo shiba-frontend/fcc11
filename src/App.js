@@ -162,6 +162,8 @@ import MyPredictWinner from "./component/user/dashboard/MyPredictWinner";
 import ViewStanding from "./component/admin/fantacygame/ViewStanding";
 import Notfound from "./component/cms/Notfound";
 import ForceUpdate from "./component/admin/ForceUpdate";
+import Legality from "./component/cms/Legality";
+import TermsOfServices from "./component/cms/TermsOfServices";
 
 function App() {
   return (
@@ -179,6 +181,8 @@ function App() {
               <Route path="/uder-process" element={<AfterRegistration />} />
               <Route path="/signup-fantasygame" element={<FantacyGameSignup />} />
               <Route path="/signup-club" element={<ClubAssociationRegistration />} />
+               <Route path="/legality" element={<Legality />} />
+              <Route path="/term-of-services" element={<TermsOfServices />} />
 
             <Route element={<PrivateRoute />}> 
                 <Route path="/" element={<Index />} />

@@ -83,10 +83,10 @@ const Footer = () => {
                                 <NavLink to="/about-us"><i className="fas fa-angle-double-right"></i> About Us</NavLink>
                             </li>
                             <li>
-                                <NavLink><i className="fas fa-angle-double-right"></i> Legality</NavLink>
+                                <NavLink to="/legality"><i className="fas fa-angle-double-right"></i> Legality</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/terms-conditions"><i className="fas fa-angle-double-right"></i> Terms of Service</NavLink>
+                                <NavLink to="/term-of-services"><i className="fas fa-angle-double-right"></i> Terms of Service</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/privacy-policy"><i className="fas fa-angle-double-right"></i> Privacy Policy</NavLink>
