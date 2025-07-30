@@ -12,10 +12,9 @@ const About = () => {
                 </div>
                 <div className='col-lg-6 col-md-7'>
                     <h3>About <span style={{color:COLORS.primaryColor}}>us</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.. 
+                    <p>This website supports the fun virtual prediction contests on the tournaments conducted by Farmington cricket club. </p>
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.. </p>
-                <NavLink className="themeBtn" style={{background:COLORS.primaryColor}}>join now</NavLink>
+                <NavLink className="themeBtn" to="/signup" style={{background:COLORS.primaryColor}}>join now</NavLink>
             </div>
             </div>
         </div>

@@ -22,6 +22,12 @@ const Partners = () => {
             <li>
                 <img src={IMAGE.partners_five} alt='partners' />
             </li>
+             <li>
+                 <img src={IMAGE.mainlogo} alt='logo' />
+            </li>
+           <li>
+                 <img src={IMAGE.andhra} alt='logo' />
+            </li>
           </ul>
       </div>
     </div>

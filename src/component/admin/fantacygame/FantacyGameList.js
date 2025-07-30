@@ -336,7 +336,8 @@ const FantacyGameList = () => {
                 <NavLink to={`/admin/fantacy-games/view-standing/${list?.id}`} className="btn btn-sm btn-outline-primary ml-2">View Standing</NavLink>
 
        }
-                {/* <button  className="btn btn-sm btn-success ml-2">Winner</button> */}
+       <NavLink to={`/admin/fantacy-games/select-winner/${list?.id}`}  className="btn btn-sm btn-outline-success ml-2">Winner</NavLink>
+              
             </td>
         </tr>
         )

@@ -51,7 +51,8 @@ const MyPredictWinner = () => {
                                 //isselect: response?.data?.data?.my_predict_teams.some(id => id === element?.match_details?.team2_id)
                             },
                         ],
-                        isselect:element?.my_prediction
+                        isselect:element?.my_prediction,
+                        matchstatus:element?.match_details?.match_status
                     })
                 });
                 setTournamentteam(TempArr)
@@ -123,6 +124,7 @@ const MyPredictWinner = () => {
 
 }
 
+console.log("Tournamentteam",Tournamentteam)
 
   return (
     <>
@@ -152,14 +154,17 @@ const MyPredictWinner = () => {
                         <div className='image-vs-in'>
                             <img src={BaseUrl.baseurl + obj?.team_image} width="100" />
                             <label> {obj?.team_name}</label>
-                            <button className={item?.isselect?.team_id === obj?.team_id && 'active' } onClick={()=>SelectHandle(item?.match_id, obj)}>Select</button>
+                          
+                            <button disabled={item?.matchstatus == 2 ? true : false} className={item?.isselect?.team_id === obj?.team_id ? 'winnerbttn active' : 'winnerbttn' } onClick={()=>SelectHandle(item?.match_id, obj)}> {item?.isselect?.team_id === obj?.team_id ? 'Selected' : 'Select'} </button>
+                            
                         </div>
                     )
                 })}
                 <span>VS</span>
                
             </div>
-       
+            <label className='matchStatusPredictWinner'>{item?.matchstatus == 2 ? 'Completed' : item?.matchstatus == 1 ? 'Live' : 'Pending'}</label>
+   
       
         {/* <button className={tournamentteamId == item?.match_id ? 'active' : null} onClick={()=>SelectHandleTournament(item?.team_id)}>Select</button> */}
     </li>

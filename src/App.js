@@ -164,6 +164,7 @@ import Notfound from "./component/cms/Notfound";
 import ForceUpdate from "./component/admin/ForceUpdate";
 import Legality from "./component/cms/Legality";
 import TermsOfServices from "./component/cms/TermsOfServices";
+import SelectWinner from "./component/admin/fantacygame/SelectWinner";
 
 function App() {
   return (
@@ -284,6 +285,7 @@ function App() {
                <Route path="/admin/fantacy-games/creditscore/:id" element={<PlayerCreditScore />} />
                <Route path="/admin/fantacy-games/view-standing/:id" element={<ViewStanding />} />
                <Route path="/admin/admin-player-credits" element={<AdminPlayerCredit />} />
+                 <Route path="/admin/fantacy-games/select-winner/:id" element={<SelectWinner  />} />
 
 
                <Route path="/admin/request-join" element={<JoinList />} />

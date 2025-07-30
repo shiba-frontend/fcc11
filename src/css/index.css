@@ -839,12 +839,13 @@ button.clodeBtn {
     background: #F5F5F5;
     color: #1A237E;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 7px 36px;
+    padding: 12px 36px;
     display: inline-block;
+    border-radius: 0;
 }
 .card-listed-cen {
     text-align: center;
@@ -1017,7 +1018,10 @@ button.btnStyle-three {
     padding: 30px;
 }
 .leaderboard-top {
-    padding: 0 100px;
+    padding: 0 0px;
+}
+.leaderboard-team-info {
+    width: 74%;
 }
 .leaderboard-team {
     display: flex;
@@ -1030,6 +1034,7 @@ button.btnStyle-three {
     gap: 15px;
     justify-content: center;
     width: 40%;
+    position: relative;
 }
 .leaderboard-team-img {
     width: 35px;
@@ -1044,7 +1049,7 @@ button.btnStyle-three {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 49px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -1052,17 +1057,85 @@ button.btnStyle-three {
     background: #000;
     min-height: 97px;
     color: #fff;
+    position: relative;
 }
 .leaderboard-team h4 {
     margin: 0;
     color: #fff;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    width: 71%;
+}
+span.winerTeam {
+    position: absolute;
+    top: -37px;
+    left: 0;
+    background: #1a237e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+      animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+span.winerTeam::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    margin: 0 auto;
+    bottom: -7px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #1a237e;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+label.matchStatus {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    background: #000000;
+    width: 87px;
+    border-radius: 3px;
+    padding: 3px 0;
+}
+
+
+
+label.matchStatus::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000000;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+}
+.leaderboard-team h5 {
+    margin: 3px 0 0 0;
+    font-size: 12px;
 }
 .card-listed.leaderboard-v {
     box-shadow: none;
@@ -3370,4 +3443,67 @@ ul.step-wizard li::before {
 }
 ul.step-wizard li:last-child::before{
     display: none;
+}
+span.match-date {
+    margin: 0 auto;
+    background: #1a237e;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 0 3px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+span.matchStatus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 3px 0 0 0;
+}
+.matchStatus.Completed {
+    background: #ffc107;
+    color: #000;
+}
+.matchStatus.Live {
+    background: #0f9921;
+    color: #FFF;
+}
+.matchStatus.Pending {
+    background: #dc3545;
+    color: #FFF;
+}
+button.winnerbttn[disabled] {
+    pointer-events: none;
+}
+button.winnerbttn.active {
+    pointer-events: none;
+}
+label.matchStatusPredictWinner {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 12px;
+    background: #000000;
+    width: 87px;
+    border-radius: 3px;
+    padding: 4px 0;
+    color: #fff !important;
+}
+label.matchStatusPredictWinner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000000;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
 }

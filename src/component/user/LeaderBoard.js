@@ -66,6 +66,24 @@ const LeaderBoard = () => {
     },[])
 
 
+    function GetwinerForAteam(aid,wid){
+        if(wid !== null){
+            if(aid == wid){
+                return 'Winner'
+            } else return false
+        }
+    }
+
+        function GetwinerForBteam(bid, wid){
+        if(wid !== null){
+            if(bid == wid){
+                return 'Winner'
+            } else return false
+        }
+
+    }
+
+
 
 
   return (
@@ -92,7 +110,13 @@ const LeaderBoard = () => {
                                             <div className='leaderboard-team-img'>
                                                 <img src={BaseUrl.baseurl + item?.a_team_image} alt="country"/>
                                             </div>
-                                            <h4>{item?.a_team_name}</h4>
+                                            <div className='leaderboard-team-info'>
+                                              <h4>{item?.a_team_name} </h4>
+                                                <h5>Team Id: {item?.a_team_unique_id}</h5>
+                                            </div>
+                                            {GetwinerForAteam(item?.a_team_unique_id,item?.winner_team_id) && 
+                                            <span className='winerTeam'>{GetwinerForAteam(item?.a_team_unique_id,item?.winner_team_id)}</span>
+                       }
                                         </div>
                                         VS
 
@@ -100,8 +124,15 @@ const LeaderBoard = () => {
                                             <div className='leaderboard-team-img'>
                                                 <img src={BaseUrl.baseurl + item?.b_team_image} alt="country"/>
                                             </div>
-                                            <h4>{item?.b_team_name}</h4>
+                                          <div className='leaderboard-team-info'>
+                                            <h4>{item?.b_team_name} </h4>
+                                             <h5>Team Id: {item?.b_team_unique_id}</h5>
+                                               </div>
+                                               {GetwinerForBteam(item?.b_team_unique_id, item?.winner_team_id) &&
+                                               <span className='winerTeam'>{GetwinerForBteam(item?.b_team_unique_id, item?.winner_team_id)}</span>
+                       }
                                         </div>
+                                    <label className='matchStatus'>{item?.match_status == 1 ? 'Live' : item?.match_status == 2 ? 'Completed' : 'Pending'}</label>
                                 </div>
                             </div>
                         
@@ -119,7 +150,7 @@ const LeaderBoard = () => {
                             <div className="col-lg-3">
                                 <div className="card-listed-lft">
                                    
-                                    <p>Total Winning: <b>$ {data?.data?.total_prize_pool}</b></p>
+                                    <p>Total Winning: <b>{data?.data?.total_prize_pool}</b></p>
                                 
                                 </div>
                             </div>
@@ -132,7 +163,7 @@ const LeaderBoard = () => {
                             </div>
                             <div className="col-lg-3">
                                 <div className="card-listed-rht">
-                                    <h5>$ {data?.data?.credit_required}</h5>
+                                    <h5>{data?.data?.credit_required}</h5>
                                 
                                     {/* <button className="btnStyle-two">Join Now</button> */}
                                     <h3>Team Joined: {teamjoined}</h3>

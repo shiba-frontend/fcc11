@@ -26,7 +26,7 @@ const Dashboard = () => {
   const [upcomingList, setupcomingList] = useState([])
   const [LiveList, setLiveList] = useState([])
   const [pastList, setpastList] = useState([])
-  const [tabs, settabs] = useState("full_fledged")
+  const [tabs, settabs] = useState("select_winner")
   const [ClubList, setClubList] = useState([])
   const [TournamentList, setTournamentList] = useState([])
   const [ClubId, setClubId] = useState("")
@@ -159,7 +159,7 @@ const GetTournamentList = async (years)=>{
 
 useEffect(() => {
   GetdashboardData()
-  GetFantacy('full_fledged', '')
+  GetFantacy('select_winner', '')
   GetClubList()
   GetTournamentList(year)
 },[])
@@ -364,11 +364,12 @@ useEffect(() => {
           <div className="dashboard_main_tab">
             <ul>
               <li>
-                  <button className={tabs == 'full_fledged' ? 'active' : ''} onClick={()=>TabsHandle('full_fledged')}>Fantasy Game</button>
-              </li>
-              <li>
                   <button className={tabs == 'select_winner' ? 'active' : ''} onClick={()=>TabsHandle('select_winner')}>Predictions</button>
               </li>
+              <li>
+                  <button className={tabs == 'full_fledged' ? 'active' : ''} onClick={()=>TabsHandle('full_fledged')}>Fantasy Game</button>
+              </li>
+              
             </ul>
           </div>
 
@@ -523,10 +524,12 @@ item?.is_game_join != 0 ?
              <div className="col-lg-6 col-6 col-md-4">
                  <div className="card-listed-cen">
                  {item?.game_predict_option == "select_winner" &&
-                 <div className="btnStyle-one mb-1" style={{display:'inline-block'}}>Predict the winner</div>
+                 <div className="btnStyle-one mb-1 mt-1" style={{display:'inline-block'}}>Predict the winner</div>
              
                        
      }
+   
+
      <br />
      {item?.game_predict_option == "select_winner" &&
      <span>Member Joined: {item?.total_teams}</span>
@@ -554,11 +557,19 @@ item?.is_game_join != 0 ?
                          }
                     {tabs == 'full_fledged' &&
                  <div className="card-listed-cen">
-                      
+
                          <NavLink className="btnStyle-text" to={`/contest/complete/${item?.id}`}>Open Contest</NavLink>
-                         
                  </div>
    }
+         {item?.game_predict_option == "select_winner" &&
+            <NavLink className="btnStyle-two mt-2" style={{display:'inline-block'}} to={`/leaderboard/${item?.id}`}>View Standing</NavLink>             
+     }
+          {item?.game_predict_option == "full_fledged" &&
+            <NavLink className="btnStyle-two mt-2" style={{display:'inline-block'}} to={`/leaderboard/${item?.id}`}>View Standing</NavLink>             
+     }
+   
+
+
      
                  </div>
              </div>

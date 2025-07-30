@@ -51,6 +51,8 @@ export const IMAGE = {
    delete: url + 'delete.png',
    view: url + 'view.png',
    succes_image: url + 'succes_image.png',
+   mainlogo:url + 'main-logo.png',
+   andhra:url +'andhra.png'
 }
 
 export const COLORS = {

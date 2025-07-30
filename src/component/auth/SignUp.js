@@ -70,7 +70,12 @@ const SignUp = () => {
                   setinputotp(response?.data?.data?.otp)
                   setCounter(60)
                 } else {
-                  toast.error(response?.data?.message)
+                  if(response?.data?.data?.email){
+                    toast.error('The email has already been taken')
+                  } else if(response?.data?.data?.phone){
+                    toast.error('The phone has already been taken')
+                  }
+                  
                 
                 }
                  
@@ -137,7 +142,7 @@ const SignUp = () => {
       var FormData = require('form-data');
       var data = new FormData();
       data.append('email', email);
-      const response = await ApiConnection.post('register/verification', data)
+      const response = await ApiConnection.post('register/resend-otp', data)
       if(response?.status === 200) {
         setloading(false);
         toast.success(response?.data?.message);

@@ -33,11 +33,11 @@ const Testimonial = ({data}) => {
               <span style={{ color: COLORS.primaryColor }}>customers</span> have
               said
             </h3>
-            <p>
+            {/* <p>
               Pleasure and praising pain was born and I will give you a complete
               account of the system, and expound the actual teachings of the
               great explorer.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="col-lg-7 col-md-7">

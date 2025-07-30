@@ -11,9 +11,9 @@ const Banner = () => {
                 <div className='col-lg-6'>
                 
                     <h3>FCC <span style={{color:COLORS.primaryColor}}>11</span></h3>
-                    <h5>FANTASY GAME <span style={{color:COLORS.thirdColor}}>CREATOR</span> </h5>
-                    <h6>FLOW WIREFRAME</h6>
-                    <NavLink className="themeBtn" to="/signup" style={{background:COLORS.primaryColor}}>Join Now</NavLink>
+                    <h5>FCC Tournament's Prediction <span style={{color:COLORS.thirdColor}}>contest</span> </h5>
+                    {/* <h6>FLOW WIREFRAME</h6> */}
+                    <NavLink className="themeBtn mt-3" to="/signup" style={{background:COLORS.primaryColor}}>Join Now</NavLink>
                 </div>
                 <div className='col-lg-6'>
                     <div className='banner-vector'>

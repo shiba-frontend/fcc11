@@ -19,7 +19,7 @@ const Introduction = ({data}) => {
                 </div>
                 <div className='col-lg-5 col-md-6'>
                    <h3>View All <span style={{color:COLORS.primaryColor}}>Matches</span></h3>
-                   <div dangerouslySetInnerHTML={{__html: data?.description}}></div>               
+                   {/* <div dangerouslySetInnerHTML={{__html: data?.description}}></div>                */}
                        <NavLink to="/signup" className="themeBtn" style={{background:COLORS.primaryColor}}>join now</NavLink>
                 </div>
             </div>

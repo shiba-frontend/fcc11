@@ -12,7 +12,7 @@ const SiteInfo = () => {
                 <div className='col-lg-8 col-md-8'>
                     <h2>Play Fantasy <span style={{color:COLORS.thirdColor}}>Cricket on</span></h2>
                     <h1>FCC<span style={{color:COLORS.primaryColor}}>11</span></h1>
-                    <ul>
+                    {/* <ul>
                         <li>
                             <span> <img src={IMAGE.icon_one} alt="icon"/></span>
                             <h6>4.3 OUT OF 5</h6>
@@ -28,7 +28,7 @@ const SiteInfo = () => {
                             <h6>₹ 500 CRORE+</h6>
                             <b>PRIZES WON</b>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </div>
