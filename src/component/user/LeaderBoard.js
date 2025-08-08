@@ -132,7 +132,7 @@ const LeaderBoard = () => {
                                                <span className='winerTeam'>{GetwinerForBteam(item?.b_team_unique_id, item?.winner_team_id)}</span>
                        }
                                         </div>
-                                    <label className='matchStatus'>{item?.match_status == 1 ? 'Live' : item?.match_status == 2 ? 'Completed' : 'Pending'}</label>
+                                    <label className='matchStatus'>{item?.match_status == 1 ? 'Live' : item?.match_status == 2 ? 'Completed' : item?.match_status == 0  ? 'Pending' : 'Cancelled'}</label>
                                 </div>
                             </div>
                         
